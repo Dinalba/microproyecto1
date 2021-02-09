@@ -107,4 +107,9 @@ document.getElementById("btn-send-msg").onclick = function () {
   } else {
     alert("The form is not fill correctly. Please, try again.");
   }
+
+  name.value="";
+  phone.value="";
+  email.value="";
+  message.value="";
 };
