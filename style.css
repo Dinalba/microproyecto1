@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+
+.header .menu{
+    position: fixed;
+    height: 50px;
+    width: 100vw;
+    background-color: white;     
+    display: flex;
+    justify-content: space-between;  
+}
+
+.header .menu .logo{
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.header .menu .navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header .menu .navbar li{
+    position: relative;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;        
+}
+
+.header .menu .navbar li a{
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;   
+    color: black;     
+}
+
+.header .menu .navbar li a:hover{
+    font-size: 18px;
+    color: deeppink;
+}
