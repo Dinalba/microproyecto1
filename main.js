@@ -8,7 +8,7 @@ document.getElementById("btn1").onclick = function () {
 
 document.getElementById("btn2").onclick = function () {
   var imagen2 = document.getElementById("slide");
-  imagen2.style.backgroundImage = "url(images/Background2.png)";
+  imagen2.style.backgroundImage = "url(images/Background6.png)";
   imagen2.style.backgroundSize = "100vw 100vh";
 };
 
@@ -19,7 +19,7 @@ document.getElementById("btn3").onclick = function () {
 };
 document.getElementById("btn4").onclick = function () {
   var imagen4 = document.getElementById("slide");
-  imagen4.style.backgroundImage = "url(images/Background4.png)";
+  imagen4.style.backgroundImage = "url(images/Background7.png)";
   imagen4.style.backgroundSize = "100vw 100vh";
 };
 document.getElementById("btn5").onclick = function () {
@@ -98,11 +98,7 @@ document.getElementById("btn-send-msg").onclick = function () {
   let email = document.getElementById("email");
   let message = document.getElementById("message");
 
-  if (name.value != "" && phone.value != "" && email.value != "" && message.value != null) {
-    console.log("Nombre: " + name.value +
-        "\nTeléfono: " + phone.value +
-        "\nCorreo:" + email.value +
-        "\nMessage: " +message.value);
+  if (isEmpty(name)==false && isEmpty(phone)==false && isEmpty(email)==false && isEmpty(message)==false){
         alert("The email has been send sucesfully. Please, check console");
   } else {
     alert("The form is not fill correctly. Please, try again.");
@@ -113,3 +109,12 @@ document.getElementById("btn-send-msg").onclick = function () {
   email.value="";
   message.value="";
 };
+
+function isEmpty(txt){
+  if(txt.value==null || txt.value==""){
+    return true;
+  }else{
+    return false;
+  }
+}
+
