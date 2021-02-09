@@ -182,6 +182,51 @@ body{
     text-align: justify;
 }
 
+/*About Me*/
+.aboutme{
+    height: 100vh;
+    padding-top: 50px;
+    background-color: rgb(20, 220, 200);
+}
+
+.aboutme h3{
+    font-size: 40px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme .meContainer{   
+    margin-top: 20px;
+    margin-left: 20px;
+    border-style: none;
+    border-radius: 5px;
+    width: 255px;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme .meContainer span{   
+    color: deeppink;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.aboutme .meContainer p{   
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.aboutme .meContainer .profilePicture{   
+    margin: 10px;    
+    border-style: solid;
+    border-radius: 5px;
+    border-color: silver;
+    width: 230px;
+    height: 230px;
+}
 
 /*Skills*/
 .skills{
