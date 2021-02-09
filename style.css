@@ -56,3 +56,36 @@ html{
     font-size: 18px;
     color: deeppink;
 }
+
+/*Hero*/
+
+
+/*Section Hero*/
+.hero{    
+    top: 50px;
+    width: 100vw;
+    height: 95vh; 
+    background-size: cover;
+    background-position: center;    
+}
+
+.hero .slide h1{
+    font-size: 400%;
+}
+
+.hero .slide h2{
+    font-style: italic;
+    color:deeppink;
+}
+
+.hero .slide{
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    background-color: rgba(0, 22, 40, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
