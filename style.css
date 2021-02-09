@@ -10,10 +10,6 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    height: 10000px;
-}
-
 /*Navbar*/
 
 .header .menu{
@@ -184,7 +180,7 @@ body{
 
 /*About Me*/
 .aboutme{
-    height: 100vh;
+    height: 90vh;
     padding-top: 50px;
     background-color: rgb(20, 220, 200);
 }
@@ -202,29 +198,48 @@ body{
 }
 
 .aboutme .goalscontainer{
+    display: flex;
     margin-top: 20px;
     margin-left: 30px;
 }
 
 .aboutme .goalscontainer .shortTempGoals{
+    display: flex;
+    flex-direction: column;
     border-style: solid;
-    width: calc(100vw - 400px);
+    color: white;
+    background-color: rgb(221, 71, 151);
+    margin-right: 20px;
+    width: 300px;
     border-color: white;
     border-radius: 15px;
 }
 
+.aboutme .goalscontainer .shortTempGoals .logos{    
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 .aboutme .goalscontainer .shortTempGoals h4{
     font-size: 20px;
-    color: deeppink;
-    margin-top: 20px;
-    margin-left: 20px;
+    color: rgb(20, 220, 200);
+    margin-top: 20px;    
     margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 .aboutme .goalscontainer .shortTempGoals ul{
     margin-left: 30px;
     list-style: decimal;
     margin-bottom: 20px;
+}
+
+.aboutme .goalscontainer .shortTempGoals ul li{
+    margin-top: 15px;
+    margin-right: 15px;
+    text-align: justify;
 }
 
 .aboutme .container .meContainer{   
@@ -306,4 +321,95 @@ body{
 }
 #bar7{
     background: black;
+}
+
+/*Contact*/
+.contact{
+    height: 90vh;
+    background-color: rgb(20, 220, 200);
+    padding-top: 50px;
+}
+
+.contact h3{
+    font-size: 40px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact p{
+    font-size: 16px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .form .text{    
+    width: auto;    
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1rem;    
+}
+
+#btn-send-msg{
+    width: auto;    
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#btn-send-msg:hover{
+    width: auto;    
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: deeppink;
+}
+
+/*Contact Footer*/
+
+.contact footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact footer .socialmedia{
+    border: none;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.contact footer .socialmedia .link{
+    display: flex;
+    align-items: center;
+}
+
+.contact footer .socialmedia:hover{
+    border: none;
+    cursor: pointer;     
+    background-color: floralwhite;    
+}
+
+.contact footer .socialmedia p{
+    font-size: 16px;
+    color: black;
+    margin-left: 10px; 
+    padding-right: 10px;   
 }
