@@ -104,7 +104,7 @@ document.getElementById("btn-send-msg").onclick = function () {
     isEmpty(email) == false &&
     isEmpty(message) == false
   ) {
-    alert("The email has been send sucesfully. Please, check console");
+    alert("Your request has been sent. Please, check console");
     console.log(
       "Nombre: " +
         name.value +
