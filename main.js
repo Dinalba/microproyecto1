@@ -98,23 +98,36 @@ document.getElementById("btn-send-msg").onclick = function () {
   let email = document.getElementById("email");
   let message = document.getElementById("message");
 
-  if (isEmpty(name)==false && isEmpty(phone)==false && isEmpty(email)==false && isEmpty(message)==false){
-        alert("The email has been send sucesfully. Please, check console");
+  if (
+    isEmpty(name) == false &&
+    isEmpty(phone) == false &&
+    isEmpty(email) == false &&
+    isEmpty(message) == false
+  ) {
+    alert("The email has been send sucesfully. Please, check console");
+    console.log(
+      "Nombre: " +
+        name.value +
+        "\nPhone number: " +
+        phone.value +
+        "\nE-mail: " +
+        email.value +
+        "\nMessage: " +
+        message.value
+    );
+    name.value = "";
+    phone.value = "";
+    email.value = "";
+    message.value = "";
   } else {
     alert("The form is not fill correctly. Please, try again.");
   }
+}
 
-  name.value="";
-  phone.value="";
-  email.value="";
-  message.value="";
-};
-
-function isEmpty(txt){
-  if(txt.value==null || txt.value==""){
+function isEmpty(txt) {
+  if (txt.value == null || txt.value == "") {
     return true;
-  }else{
+  } else {
     return false;
   }
 }
-

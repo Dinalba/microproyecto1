@@ -186,25 +186,25 @@
       <h3>Contact me</h3>
       <p>To contact me via email, please fill out the form below.</p>
 
-      <div class="form">
+      <form class="form" id="form">
         <input
           type="text"
           class="text"
           id="name"
           placeholder="Nombre y Apellido"
-        />
+         required/>
         <input
-          type="text"
+          type="number"
           class="text"
           id="cellphone"
           placeholder="+584142263186"
-        />
+          required/>
         <input
           type="email"
           class="text"
           id="email"
           placeholder="ejemplo@gmail.com"
-        />
+          required/>
         <textarea
           name="msg"
           class="text"
@@ -212,9 +212,9 @@
           cols="30"
           rows="6"
           placeholder="Escribe tu mensaje"
-        ></textarea>
+          required></textarea>
         <button class="btn-send-msg" id="btn-send-msg"><b>Send</b></button>
-      </div>
+      </form>
 
       <footer>
         <div class="socialmedia">
