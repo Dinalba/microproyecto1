@@ -307,3 +307,59 @@ body{
 #bar7{
     background: black;
 }
+
+/*Contact*/
+.contact{
+    height: 100vh;
+    background-color: rgb(20, 220, 200);
+    padding-top: 50px;
+}
+
+.contact h3{
+    font-size: 40px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact p{
+    font-size: 16px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .form .text{    
+    width: auto;    
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1rem;    
+}
+
+#btn-send-msg{
+    width: auto;    
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#btn-send-msg:hover{
+    width: auto;    
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: deeppink;
+}
