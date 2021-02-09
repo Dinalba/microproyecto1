@@ -196,35 +196,66 @@ body{
     justify-content: center;
 }
 
-.aboutme .meContainer{   
+.aboutme .container{
+    display: flex;
+    align-items: center;
+}
+
+.aboutme .goalscontainer{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.aboutme .goalscontainer .shortTempGoals{
+    border-style: solid;
+    width: calc(100vw - 400px);
+    border-color: white;
+    border-radius: 15px;
+}
+
+.aboutme .goalscontainer .shortTempGoals h4{
+    font-size: 20px;
+    color: deeppink;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutme .goalscontainer .shortTempGoals ul{
+    margin-left: 30px;
+    list-style: decimal;
+    margin-bottom: 20px;
+}
+
+.aboutme .container .meContainer{   
     margin-top: 20px;
     margin-left: 20px;
     border-style: none;
     border-radius: 5px;
-    width: 255px;
+    width: 300px;
     height: 70vh;
     background-color: white;
     display: flex;
     flex-direction: column;
 }
 
-.aboutme .meContainer span{   
+.aboutme .container .meContainer span{   
     color: deeppink;
     margin-left: 20px;
     text-align: justify;
 }
 
-.aboutme .meContainer p{   
+.aboutme .container .meContainer p{   
     margin-top: 5px;
     text-align: justify;
 }
 
-.aboutme .meContainer .profilePicture{   
+.aboutme .container .meContainer .profilePicture{   
     margin: 10px;    
     border-style: solid;
     border-radius: 5px;
     border-color: silver;
-    width: 230px;
+    width: 270px;
     height: 230px;
 }
 
