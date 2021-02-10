@@ -30,7 +30,7 @@ document.getElementById("btn5").onclick = function () {
 
 //My Skills Bars
 
-var skill = [
+let json = [
   { name: "JAVA", level: "90%", height: "40px", radius: "40px" },
   { name: "HTML", level: "60%", height: "40px", radius: "40px" },
   { name: "CSS", level: "50%", height: "40px", radius: "40px" },
@@ -43,52 +43,52 @@ var skill = [
 window.addEventListener("load", function (e) {
   let bar1 = document.getElementById("bar1");
 
-  bar1.style.width = skill[0].level;
-  bar1.style.height = skill[0].height;
-  bar1.style.borderRadius = skill[0].radius;
-  bar1.style.backgroundColor = skill[0].color;
+  bar1.style.width = json[0].level;
+  bar1.style.height = json[0].height;
+  bar1.style.borderRadius = json[0].radius;
+  bar1.style.backgroundColor = json[0].color;
 
   let bar2 = document.getElementById("bar2");
 
-  bar2.style.width = skill[1].level;
-  bar2.style.height = skill[1].height;
-  bar2.style.borderRadius = skill[1].radius;
-  bar2.style.backgroundColor = skill[1].color;
+  bar2.style.width = json[1].level;
+  bar2.style.height = json[1].height;
+  bar2.style.borderRadius = json[1].radius;
+  bar2.style.backgroundColor = json[1].color;
 
   let bar3 = document.getElementById("bar3");
 
-  bar3.style.width = skill[2].level;
-  bar3.style.height = skill[2].height;
-  bar3.style.borderRadius = skill[2].radius;
-  bar3.style.backgroundColor = skill[2].color;
+  bar3.style.width = json[2].level;
+  bar3.style.height = json[2].height;
+  bar3.style.borderRadius = json[2].radius;
+  bar3.style.backgroundColor = json[2].color;
 
   let bar4 = document.getElementById("bar4");
 
-  bar4.style.width = skill[3].level;
-  bar4.style.height = skill[3].height;
-  bar4.style.borderRadius = skill[3].radius;
-  bar4.style.backgroundColor = skill[3].color;
+  bar4.style.width = json[3].level;
+  bar4.style.height = json[3].height;
+  bar4.style.borderRadius = json[3].radius;
+  bar4.style.backgroundColor = json[3].color;
 
   let bar5 = document.getElementById("bar5");
 
-  bar5.style.width = skill[4].level;
-  bar5.style.height = skill[4].height;
-  bar5.style.borderRadius = skill[4].radius;
-  bar5.style.backgroundColor = skill[4].color;
+  bar5.style.width = json[4].level;
+  bar5.style.height = json[4].height;
+  bar5.style.borderRadius = json[4].radius;
+  bar5.style.backgroundColor = json[4].color;
 
   let bar6 = document.getElementById("bar6");
 
-  bar6.style.width = skill[5].level;
-  bar6.style.height = skill[5].height;
-  bar6.style.borderRadius = skill[5].radius;
-  bar6.style.backgroundColor = skill[5].color;
+  bar6.style.width = json[5].level;
+  bar6.style.height = json[5].height;
+  bar6.style.borderRadius = json[5].radius;
+  bar6.style.backgroundColor = json[5].color;
 
   let bar7 = document.getElementById("bar7");
 
-  bar7.style.width = skill[6].level;
-  bar7.style.height = skill[6].height;
-  bar7.style.borderRadius = skill[6].radius;
-  bar7.style.backgroundColor = skill[6].color;
+  bar7.style.width = json[6].level;
+  bar7.style.height = json[6].height;
+  bar7.style.borderRadius = json[6].radius;
+  bar7.style.backgroundColor = json[6].color;
 });
 
 //Email contact
